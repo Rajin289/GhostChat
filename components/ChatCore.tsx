@@ -205,9 +205,9 @@ export default function ChatCore({ invitePeerId }: ChatCoreProps) {
         setLatency(undefined);
         peerConnection.current = null;
         destroy();
-        setTimeout(() => {
-          window.location.href = '/';
-        }, 2000);
+        setError(reason === 'network-error'
+          ? 'Connection lost. Return to home to start a new session.'
+          : 'Peer disconnected.');
       };
 
       const handleFallback = () => {

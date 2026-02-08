@@ -18,6 +18,7 @@ export async function initPeerJS(
 ): Promise<string | null> {
   return new Promise((resolve, reject) => {
     const id = Math.random().toString(36).substr(2, 9);
+    let settled = false;
     
     peer = new Peer(id, {
       ...CONFIG,
@@ -25,9 +26,20 @@ export async function initPeerJS(
       debug: 2
     });
 
+    const timeoutId = setTimeout(() => {
+      if (!settled) {
+        settled = true;
+        reject(new Error('PeerJS timeout'));
+      }
+    }, 10000);
+
     peer.on('open', (id) => {
       console.log('[PEERJS] Connected with ID:', id);
-      resolve(id);
+      if (!settled) {
+        settled = true;
+        clearTimeout(timeoutId);
+        resolve(id);
+      }
     });
 
     peer.on('connection', (conn) => {
@@ -36,10 +48,12 @@ export async function initPeerJS(
 
     peer.on('error', (err) => {
       console.error('[PEERJS] Error:', err.type, err.message);
-      reject(err);
+      if (!settled) {
+        settled = true;
+        clearTimeout(timeoutId);
+        reject(err);
+      }
     });
-
-    setTimeout(() => reject(new Error('PeerJS timeout')), 10000);
   });
 }
 
