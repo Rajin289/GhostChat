@@ -112,7 +112,7 @@ export default function Home() {
             fontWeight: 700,
           }}
         >
-          GhostChat
+          SecretChat
         </h1>
         <AnimatedTagline text="Your messages vanish like ghosts" />
         <div
