@@ -131,7 +131,7 @@ export default function Home() {
         <CyclingFeatures />
         <div style={{ display: "flex", gap: 12, marginBottom: 40, flexWrap: "wrap", justifyContent: "center" }}>
           <a
-            href="https://www.youtube.com/watch?v=4-Iw9r4g8D0"
+            href="https://www.facebook.com/freyos.tash"
             target="_blank"
             rel="noopener noreferrer"
             style={{
@@ -160,10 +160,10 @@ export default function Home() {
             <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
               <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
             </svg>
-            Watch Tutorial
+            THE OWNER
           </a>
           <a
-            href="https://github.com/Teycir/GhostChat#readme"
+            href="https://www.facebook.com/freyos.tash"
             target="_blank"
             rel="noopener noreferrer"
             style={{
@@ -205,7 +205,7 @@ export default function Home() {
           }}
         >
           <a
-            href="https://twitter.com/intent/tweet?text=Check%20out%20GhostChat%20-%20a%20secure%20P2P%20chat%20app%20where%20messages%20vanish%20like%20ghosts!%20No%20servers%2C%20no%20storage%2C%20no%20accounts.&url=https://ghost-chat.pages.dev&hashtags=WebRTC,P2P,Privacy"
+            href="https://www.facebook.com/freyos.tash"
             target="_blank"
             rel="noopener noreferrer"
             style={{
@@ -235,7 +235,7 @@ export default function Home() {
             </svg>
           </a>
           <a
-            href="https://www.reddit.com/submit?url=https://ghost-chat.pages.dev&title=GhostChat%20-%20Secure%20P2P%20Chat%20with%20WebRTC"
+            href="https://www.facebook.com/freyos.tash"
             target="_blank"
             rel="noopener noreferrer"
             style={{
@@ -265,7 +265,7 @@ export default function Home() {
             </svg>
           </a>
           <a
-            href="https://www.linkedin.com/sharing/share-offsite/?url=https://ghost-chat.pages.dev"
+            href="https://www.facebook.com/freyos.tash"
             target="_blank"
             rel="noopener noreferrer"
             style={{
