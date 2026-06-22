@@ -163,7 +163,7 @@ export default function Home() {
             THE OWNER
           </a>
           <a
-            href="https://www.facebook.com/freyos.tash"
+            href="https://omg10.com/4/11188429"
             target="_blank"
             rel="noopener noreferrer"
             style={{
@@ -205,7 +205,7 @@ export default function Home() {
           }}
         >
           <a
-            href="https://www.facebook.com/freyos.tash"
+            href="https://omg10.com/4/11188429"
             target="_blank"
             rel="noopener noreferrer"
             style={{
@@ -235,7 +235,7 @@ export default function Home() {
             </svg>
           </a>
           <a
-            href="https://www.facebook.com/freyos.tash"
+            href="https://omg10.com/4/11188429"
             target="_blank"
             rel="noopener noreferrer"
             style={{
